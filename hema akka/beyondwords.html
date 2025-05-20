@@ -1,0 +1,301 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To My Didi 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Dancing Script', cursive;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      overflow: hidden;
+      position: relative;
+      color: #4d2600;
+    }
+
+    /* Left-side floating image */
+    .side-image {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      max-height: 80vh;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+    
+    .message {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 1rem;
+      padding-right: 0%;
+      max-width: 700px;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #d35400;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      margin: 0;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 32px;
+      color: #e25555;
+      animation: float-blink 6s infinite ease-in-out;
+      z-index: 0;
+    }
+
+    @keyframes float-blink {
+      0% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+      30% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+      }
+    }
+
+    /* Spread hearts across screen with different delays */
+    .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 25%; animation-delay: 1.5s; }
+    .heart:nth-child(3) { left: 40%; animation-delay: 3s; }
+    .heart:nth-child(4) { left: 60%; animation-delay: 0.5s; }
+    .heart:nth-child(5) { left: 75%; animation-delay: 2.5s; }
+    .heart:nth-child(6) { left: 90%; animation-delay: 4s; }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      .side-image {
+        display: none; /* Hide image on very small screens */
+      }
+
+      .heart {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="heart">💖</div>
+  <div class="heart">💗</div>
+  <div class="heart">💘</div>
+  <div class="heart">💞</div>
+  <div class="heart">💓</div>
+  <div class="heart">💕</div>
+
+
+  <img src="images/hema akka.jpg" alt="Didi" class="side-image"><br>
+  
+ 
+  <div class="message">
+    <h1>To My Dearest Didi 💕</h1>
+    <p>
+Didi,<br>
+It feels like just yesterday we were fighting over silly things, and today, you're stepping into a new life.<br>
+I don’t know how to express this, but you’ve never been just a sister to me, you’ve always been my second mom. You scolded me like a mom when I was wrong, cared for me when I was sick, and stood by me like a protective wall.<br>
+Every smile of mine had your silent support behind it. Every time I fell, you were the one who picked me up, sometimes with words, sometimes with just your presence.<br>
+You’re the reason I never felt alone in life. And now that you're getting married, I'm so happy for you... but there’s a little corner of my heart that feels empty already.<br>
+Your new home will be lucky to have you, just like I was. But no matter where you go, please remember, I’ll always be your little brother, and you’ll always be my second mom.<br>
+I love you, Akka😘.
+    </p>
+    <a href="memories.html" class="cta-button">our memories</a>
+  </div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To My Didi 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Dancing Script', cursive;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      overflow: hidden;
+      position: relative;
+      color: #4d2600;
+    }
+
+    /* Left-side floating image */
+    .side-image {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      max-height: 80vh;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+
+    /* Button below the image */
+    .cta-button {
+      position: absolute;
+      left: 20px;
+      top: calc(50% + 45vh); /* slightly below image */
+      transform: translateY(-50%);
+      background-color: #d35400;
+      color: white;
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      font-family: 'Dancing Script', cursive;
+      z-index: 2;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #a84300;
+    }
+
+    .message {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 1rem;
+      padding-right: 0%;
+      max-width: 700px;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #d35400;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      margin: 0;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 32px;
+      color: #e25555;
+      animation: float-blink 6s infinite ease-in-out;
+      z-index: 0;
+    }
+
+    @keyframes float-blink {
+      0% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+      30% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+      }
+    }
+
+    .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 25%; animation-delay: 1.5s; }
+    .heart:nth-child(3) { left: 40%; animation-delay: 3s; }
+    .heart:nth-child(4) { left: 60%; animation-delay: 0.5s; }
+    .heart:nth-child(5) { left: 75%; animation-delay: 2.5s; }
+    .heart:nth-child(6) { left: 90%; animation-delay: 4s; }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      .side-image,
+      .cta-button {
+        display: none;
+      }
+
+      .heart {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Hearts -->
+  <div class="heart">💖</div>
+  <div class="heart">💗</div>
+  <div class="heart">💘</div>
+  <div class="heart">💞</div>
+  <div class="heart">💓</div>
+  <div class="heart">💕</div>
+
+  <!-- Fixed left-side image -->
+  <img src="images/hema akka.jpg" alt="Didi" class="side-image">
+
+  <!-- Button below the image -->
+  <a href="memories.html" class="cta-button">our memories</a>
+
+  <!-- Centered Message -->
+  <div class="message">
+    <h1>To My Dearest Didi 💕</h1>
+    <p>
+Didi,<br>
+It feels like just yesterday we were fighting over silly things, and today, you're stepping into a new life.<br>
+I don’t know how to express this, but you’ve never been just a sister to me, you’ve always been my second mom. You scolded me like a mom when I was wrong, cared for me when I was sick, and stood by me like a protective wall.<br>
+Every smile of mine had your silent support behind it. Every time I fell, you were the one who picked me up, sometimes with words, sometimes with just your presence.<br>
+You’re the reason I never felt alone in life. And now that you're getting married, I'm so happy for you... but there’s a little corner of my heart that feels empty already.<br>
+Your new home will be lucky to have you, just like I was. But no matter where you go, please remember, I’ll always be your little brother, and you’ll always be my second mom.<br>
+I love you, Akka😘.
+    </p>
+  </div>
+</body>
+</html>
+
